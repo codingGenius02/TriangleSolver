@@ -19,9 +19,9 @@ namespace TriangleTestClass
         public void TestEquilateralTriangle_Input7andInput7andInput7_Equal()
         {
             //arrange
-            int firstSide = 9;
-            int secondSide = 9;
-            int thirdSide= 9;
+            int firstSide = 7;
+            int secondSide = 7;
+            int thirdSide = 7;
 
             string expected = "Based on all sides being equal, the type of triangle is an EQUILATERAL";
 
@@ -32,5 +32,58 @@ namespace TriangleTestClass
             Assert.AreEqual(expected, actual);
         }
 
-    }
-}
+        //1st test for valid isosceles triangle
+        [Test]
+        public void TestIsoscelesTriangle_Input4andInput4andInput5_AllEqual()
+        {
+            //arrange
+            int firstSide = 4;
+            int secondSide = 4;
+            int thirdSide = 5;
+
+            string expected = "Based on two sides being equal, the type of triangle is an ISOSCELES";
+
+            //act
+            string actual = objTesting.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        //2nd test for valid isosceles triangle
+        [Test]
+        public void TestIsoscelesTriangle_Input4andInput5andInput4_TwoSidesEqual()
+        {
+            //arrange
+            int firstSide = 4;
+            int secondSide = 5;
+            int thirdSide = 4;
+
+            string expected = "Based on two sides being equal, the type of triangle is an ISOSCELES";
+
+            //act
+            string actual = objTesting.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        //3rd test for valid isosceles triangle
+        [Test]
+        public void TestIsoscelesTriangle_Input5andInput4andInput4_TwoSidesEqual()
+        {
+            //arrange
+            int firstSide = 5;
+            int secondSide = 4;
+            int thirdSide = 4;
+
+            string expected = "Based on two sides being equal, the type of triangle is an ISOSCELES";
+
+            //act
+            string actual = objTesting.AnalyzeTriangle(firstSide, secondSide, thirdSide);
+
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        
