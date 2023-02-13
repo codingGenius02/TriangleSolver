@@ -19,9 +19,9 @@ namespace TriangleTestClass
         public void TestEquilateralTriangle_Input7andInput7andInput7_Equal()
         {
             //arrange
-            int firstSide = 7;
-            int secondSide = 7;
-            int thirdSide= 7;
+            int firstSide = 9;
+            int secondSide = 9;
+            int thirdSide= 9;
 
             string expected = "Based on all sides being equal, the type of triangle is an EQUILATERAL";
 
